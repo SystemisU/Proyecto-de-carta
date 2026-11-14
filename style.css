@@ -122,3 +122,10 @@ body {
         background-color: #c88b06;
     }
 }
+
+@media (max-width: 600px) {
+    .cart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
