@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/6/6a/UNEFA_Letra.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Cart Unefa</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
 </head>
 <body>
-    <div class="cart-container">
-        <div class="img-container">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDqHtAbwgdnLNKrJY_V-1Y8X-__qgwJPQcQZty3XUGgA&s=10" alt="imagen del logo de la unefa" alt="Imagen del Logo de la unefa">
+    <div class="principal-container">
+        <div class="cart-container">
+            <div class="logo-container">
+                <div class="img-container">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDqHtAbwgdnLNKrJY_V-1Y8X-__qgwJPQcQZty3XUGgA&s=10" alt="imagen del logo de la unefa" alt="Imagen del Logo de la unefa">
+                </div>
+                <h3>UNEFA</h3>
+            </div>
+                
+            <form class="inputs-container" id="form">
+                <h1>Sumador Socialista</h1>
+                <input required type="number" placeholder="Primer valor" id="primer-dato">
+                <input required type="number" placeholder="Segundo valor" id="segundo-dato">
+                <p>Resultado: <span id="result">0</span></p>
+                <button type="submit">Calcular</button>
+            </form>
         </div>
-        <form class="inputs-container">
-            <input required type="number" placeholder="Primer valor">
-            <input required type="number" placeholder="Segundo valor">
-            <p>Resultado: <span>0</span></p>
-            <button type="submit">Calcular</button>
-        </form>
+        <div class="cart-container two">
+            <h4>Integrantes:</h4>
+            <ul>
+                <li>Santiago Maya; 33.506.886</li>
+                <li>Joneiberth Yrazabal; 31.276.853</li>
+                <li>Réne Abasol; 31.288.919</li>
+                <li>Javier Emilio; 31.657.934</li>
+                <li>María Labrador; 30.967.148</li>
+            </ul>
+        </div>
     </div>
+
+    <script type="mpy" src="./main.py"></script>
 </body>
 </html>
