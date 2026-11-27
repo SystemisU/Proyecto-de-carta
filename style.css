@@ -151,6 +151,15 @@ h1 {
     box-shadow: 0 0 0 transparent !important;
 }
 
+.delete {
+    background-color: red !important;
+    box-shadow: 4px 4px 0 rgb(146, 1, 1) !important;
+    transition: all 0.03s ease-in-out;
+}
+.delete:active {
+    box-shadow: 0 0 0 transparent !important;
+} 
+
 .cart-container {
     background-color: #192883;
     background-image:
@@ -164,7 +173,7 @@ h1 {
     border: 4px solid white;
     border-right: none;
     border-radius: 0 0 0 20px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     right: -290px;
     transition: all 0.8s ease-in-out;
@@ -190,5 +199,23 @@ h1 {
         li {
             margin-left: 1rem;
         }
+    }
+}
+
+@media (max-width: 657px) {
+    body {
+        height: fit-content;
+    }
+    h1 {
+        text-align: center;
+    }
+    .principal-container {
+        flex-direction: column;
+        overflow: visible;
+        gap: 1rem;
+    }
+    .carcasa {
+        width: 90%;
+        margin-bottom: 1rem;
     }
 }
