@@ -7,27 +7,99 @@
     <link rel="stylesheet" href="style.css">
     <title>Cart Unefa</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.11.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2025.11.1/core.js"></script>
 </head>
 <body>
-    <div class="principal-container">
-        <div class="cart-container">
-            <div class="logo-container">
-                <div class="img-container">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDqHtAbwgdnLNKrJY_V-1Y8X-__qgwJPQcQZty3XUGgA&s=10" alt="imagen del logo de la unefa" alt="Imagen del Logo de la unefa">
-                </div>
-                <h3>UNEFA</h3>
+    <h1>
+        Calculadora Revolucionaria
+    </h1>
+
+    <section class="principal-container">
+        <article class="divisores izquierda">
+            <div class="img-logo-container">
+                <img src="image/logo.png" alt="">
             </div>
-            <form class="inputs-container" id="form">
-                <h1>Sumador Socialista</h1>
-                <input required type="number" placeholder="Primer valor" id="primer-dato">
-                <input required type="number" placeholder="Segundo valor" id="segundo-dato">
-                <p>Resultado: <span id="result">0</span></p>
-                <button type="submit">Calcular</button>
-            </form>
-        </div>
-        <div class="cart-container two">
+            <div class="img-letters-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/UNEFA_Letra.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" alt="">
+            </div>
+        </article>
+        <article class="divisores derecha">
+            <div class="carcasa">
+                <div class="pantalla">
+                    <p>
+                        1+1=2
+                    </p>
+                </div>
+                <div class="opcions-container">
+                    <button>
+                        CE
+                    </button>
+                    <button>
+                        >
+                    </button>
+                </div>
+                <div class="buttons-container">
+                    <button>
+                        1
+                    </button>
+                    <button>
+                        2
+                    </button>
+                    <button>
+                        3
+                    </button>
+                    <button class="operaciones">
+                        +
+                    </button>
+                    <button>
+                        4
+                    </button>
+                    <button>
+                        5
+                    </button>
+                    <button>
+                        6
+                    </button>
+                    <button class="operaciones">
+                        -
+                    </button>
+                    <button>
+                        7
+                    </button>
+                    <button>
+                        8
+                    </button>
+                    <button>
+                        9
+                    </button>
+                    <button class="operaciones">
+                        *
+                    </button>
+                    <button>
+                        0
+                    </button>
+                    <button>
+                        .
+                    </button>
+                    <button class="operaciones">
+                        =
+                    </button>
+                    <button class="operaciones">
+                        /
+                    </button>
+                </div>
+            </div>
+        </article>
+        
+        <div class="cart-container">
             <h4>Integrantes:</h4>
             <ul>
                 <li>Santiago Maya; 33.506.886</li>
@@ -37,7 +109,7 @@
                 <li>María Labrador; 30.967.148</li>
             </ul>
         </div>
-    </div>
+    </section>
 
     <script type="mpy" src="./main.py"></script>
 </body>
